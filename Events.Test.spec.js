@@ -4,7 +4,7 @@ describe('Events Page Test', () => {
 
 
     //Udalosti Text test
-    cy.get('[style="padding: 32px 350px 0px;"] > h1').should('contain','Udalosti')
+    cy.get('[style="padding: 32px 350px 0px; color: rgb(194, 14, 77);"] > h1').should('contain','Udalosti')
     .should('exist')
     .should('be.visible')
 
@@ -14,10 +14,10 @@ describe('Events Page Test', () => {
     .should('be.visible')
 
     cy.get(':nth-child(2) > .MuiCardContent-root > .MuiTypography-h6')
-    cy.contains('.MuiCardContent-root', 'HVK TRÉNING').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'MIA FESTIVAL').should('exist').should('be.visible');
 
     cy.get(':nth-child(2) > .MuiCardContent-root > .MuiTypography-body2')
-    cy.contains('.MuiCardContent-root', '16:30 - 18:30').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'Tanečná súťaž KOŠICE 18.4.2025').should('exist').should('be.visible');
 
 
     //Second Bar With Text Test
@@ -26,10 +26,10 @@ describe('Events Page Test', () => {
     .should('be.visible');
 
     cy.get(':nth-child(3) > .MuiCardContent-root > .MuiTypography-h6')
-    cy.contains('.MuiCardContent-root', 'JVK TRÉNING').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'BREAK-IN WORKSHOP').should('exist').should('be.visible');
 
     cy.get(':nth-child(3) > .MuiCardContent-root > .MuiTypography-body2')
-    cy.contains('.MuiCardContent-root', '16:50 - 17:50').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'KOŠICE 14.5.2025 Lektor: Ľubomír Pelko 17:00 Kultúrne Stredisko Nad Jazerom').should('exist').should('be.visible');
 
 
 
@@ -39,8 +39,8 @@ describe('Events Page Test', () => {
     .should('be.visible')
 
     cy.get(':nth-child(4) > .MuiCardContent-root > .MuiTypography-h6')
-    cy.contains('.MuiCardContent-root', 'HVK TRÉNING').should('exist').should('be.visible');
-    cy.contains('.MuiCardContent-root', '16:50 - 17:50').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'EUROPEAN DANCE CUP').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'Európska súťaž o pohár a postup KANIJŽA SERBIA 20.5.2025').should('exist').should('be.visible');
 
 
 
@@ -50,10 +50,10 @@ describe('Events Page Test', () => {
     .should('be.visible')
 
     cy.get(':nth-child(5) > .MuiCardContent-root > .MuiTypography-h6')
-    cy.contains('.MuiCardContent-root', 'DVK TRÉNING').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'CONTEMPORARY WORKSHOP').should('exist').should('be.visible');
 
     cy.get(':nth-child(5) > .MuiCardContent-root > .MuiTypography-body2')
-    cy.contains('.MuiCardContent-root', '17:00 - 18:00').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'KOŠICE 12.6.2025 Lektor: Jana Rozhoňová 18:00 Kultúrne Stredisko Nad Jazerom').should('exist').should('be.visible');
 
 
 
@@ -63,10 +63,10 @@ describe('Events Page Test', () => {
     .should('be.visible')
 
     cy.get(':nth-child(6) > .MuiCardContent-root > .MuiTypography-h6')
-    cy.contains('.MuiCardContent-root', 'DVK TRÉNING').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'DANCE CAMP').should('exist').should('be.visible');
 
     cy.get(':nth-child(6) > .MuiCardContent-root > .MuiTypography-body2')
-    cy.contains('.MuiCardContent-root', '18:00 - 19:00').should('exist').should('be.visible');
+    cy.contains('.MuiCardContent-root', 'Tanečný tábor plný tréningov a nových znalostí 5.7-13.7.2025 Remetské Hámre').should('exist').should('be.visible');
 
   })
 })
